@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "husky install"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/client": "^6.9.0",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -23,7 +28,9 @@
     "eslint-config-next": "15.3.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
+    "prisma": "^6.9.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
