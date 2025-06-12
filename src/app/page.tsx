@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TestTableList from "./components/TestTableList";
+import TestTableList from "../shared/components/TestTableList";
 
 export default function Home() {
   return (
